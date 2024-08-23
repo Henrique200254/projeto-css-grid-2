@@ -71,8 +71,12 @@ header li{
 
 .content {
    grid-area: content;
-   
-
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 30px;
+   gap: 30px;
+   max-width: 900px;
+   margin: 0 auto;
 }
 
 .anuncios {
@@ -81,6 +85,10 @@ header li{
 
 .footer {
     grid-area: footer;
+}
+
+.titulo {
+    
 }
 
 .titulo h1{
@@ -98,18 +106,31 @@ header li{
 
 .caracteristicas {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+    
 }
+
 
 .numero {
     font-size: 2em;
     background-color: #8844ee;
     color: white;
+    align-self: flex-start;
+    margin: 10px auto;
+    border-radius: 5px;
+    width: 80px;
 }
 
 .rotulo {
     font-size: 1em;
     color: #B07DFB;
     background-color: white;
+    align-self: flex-end;
+    padding: 5px 0;
+    position: relative;
+    top: 2px;
 }
