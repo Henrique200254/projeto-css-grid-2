@@ -71,7 +71,8 @@ header li{
 
 .content {
    grid-area: content;
-   display: grid;
+   
+
 }
 
 .anuncios {
