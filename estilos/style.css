@@ -73,7 +73,7 @@ header li{
    grid-area: content;
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 120px 90px 90px 380px;
+  
    padding: 30px;
    gap: 30px;
    max-width: 900px;
@@ -103,6 +103,7 @@ div {
     display: grid;
     padding: 30px;
     justify-content: center;
+    grid-template-columns: minmax(auto-fit, 150px);
 }
 
 
@@ -122,7 +123,6 @@ ul {
     display: list-item;
     background-color: white;
     margin-bottom: 40px;
-    width: 150px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.11);
@@ -208,7 +208,7 @@ p {
 }
 
 .p2 {
-    font-size: 1em;
+    font-size: 0.85em;
     color: #B07Dfb;
     justify-content: flex-start;
 
@@ -226,17 +226,19 @@ img {
     width: 100%;
     max-width: 100%;
     display: block;
+    border-radius: 5px;
+    margin: 0 auto;
     
 }
 
 .img1{
     grid-row: span 2;
-    height: 100%;
-      
+    align-self: flex-end;
+    justify-self: stretch;
 }
 
 .img2 {
-    height: 100%;
+     align-self: flex-end;
      
 }
 
@@ -263,6 +265,7 @@ img {
     line-height: 2.5;
     padding: 20px;
     border-radius: 5px;
+    align-content: space-evenly;
     
 }
 
