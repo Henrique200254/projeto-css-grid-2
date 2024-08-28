@@ -126,6 +126,8 @@ ul {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.11);
+    max-width: 150px;
+    min-width: 105px;
 }
 
 .sidenav img {
@@ -284,17 +286,24 @@ img {
     padding: 20px;
     display: grid;
     justify-content: center;
-    grid-template-rows: 220px;
+    grid-template-rows: 220px 150px;
+    align-items: center;
 }
 
 .anuncios img {
-    max-width: 246px;
-    min-width: 220px;
+    max-width: 212px;
+    min-width: 200px;
     border-radius: 10px;
 }
 
 .anuncio-item {
-    max-height: 250px;  
+    max-height: 250px; 
+    display: grid;
+    grid-template-rows: auto; 
+}
+
+.anuncio-item2 {
+
 }
 
 .footer {
