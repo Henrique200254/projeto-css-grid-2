@@ -1,16 +1,77 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
     .estrutura {
         display: grid;
-    grid-template-columns: minmax(160px, 1fr) 3fr 1fr;
+    grid-template-columns: 100%;
     grid-template-areas: 
-       "header  header   header"
-       "sidenav content  content"
-       "sidenav anuncios anuncios"
-       "footer  footer   footer"
-       ; 
+       "header"
+       "sidenav" 
+       "content"
+       "anuncios"
+       "footer"
+       ;
     }
+
+    .header {
+        justify-content: flex-start;
+        align-items: flex-start;
+        grid-template-columns: 2fr;
+       
+        
+
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+
+    .header li {
+         margin: 0px;
+         margin-top: 10px;
+         margin-right: 10px;
+    }
+
+    .header nav {
+    
+    }
+
+    .header ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    .sidenav {
+       display: grid;
+       justify-content: flex-start;
+       align-items: flex-start;
+      
+       
+    }
+
+    .sidenav a {
+        display: inline-block;
+        
+    }
+
+    .sidenav > ul {
+        
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    .sidenav li {
+        
+        padding: 10px;
+        margin: 10px;
+        min-width: 0px;
+        
+    }
+
 
     .anuncios {
         background-color: rgba(0, 0, 0, 0.0281);
@@ -18,14 +79,16 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr;
+        grid-template-rows: 1fr;
         height: 300px;
         gap: 20px;
+        
+        
     }
 
     .anuncios img {
         max-width: 300px;
-        min-width: 200px;
+        min-width: 100px;
         border-radius: 10px;
     }
     
@@ -39,4 +102,20 @@
     .anuncio-item2 {
     
     }
+
+    .footer {
+        grid-area: footer;
+        
+    }
+}
+
+@media screen and (min-width: 444px) and (max-width: 535px){
+    .atributos {
+        grid-column: 1 / -1;
+    }
+
+    .informacoes {
+        grid-column: span 2;
+    }
+    
 }

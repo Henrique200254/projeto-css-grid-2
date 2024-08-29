@@ -272,7 +272,7 @@ img {
 }
 
 .informações {
-    
+    grid-column: 2;
 }
 
 .informacoes p {

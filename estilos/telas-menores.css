@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 444px) {
+    .header {
+        justify-content: flex-start;
+        align-items: flex-start;
+        grid-template-columns: 2fr;
+        width: 444px;
+        
+
+    }
+    
+    .sidenav {
+        display: grid;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 444px;
+        
+     }
+
+     .atributos {
+        grid-column: 1 / -1;
+     }
+
+     .informacoes {
+        grid-column: 1/ -1;
+     }
+    
+    .anuncios {
+        background-color: rgba(0, 0, 0, 0.0281);
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 300px;
+        gap: 20px;
+        width: 444px;
+        
+    }
+    
+    footer {
+        grid-area: footer;
+        width: 444px;
+    }
+
+
+}
