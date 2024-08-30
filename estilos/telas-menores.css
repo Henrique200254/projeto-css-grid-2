@@ -1,29 +1,53 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 444px) {
+@media screen and (max-width: 320px) {
+    
+    .estrutura {
+        display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+       "header"
+       "sidenav" 
+       "content"
+       "anuncios"
+       "footer"
+       ;
+    }
+
+    .content {
+        display: flex;
+        flex-flow: column wrap;
+        padding-left: 5px;
+        
+    }
+
+    .titulo {
+        width: 150px;
+    }
+      
+    img {
+        max-width: 100%;
+    }
+
+
+    
     .header {
         justify-content: flex-start;
         align-items: flex-start;
-        grid-template-columns: 2fr;
-        width: 444px;
-        
-
     }
     
     .sidenav {
         display: grid;
         justify-content: flex-start;
         align-items: flex-start;
-        width: 444px;
         
      }
 
-     .atributos {
-        grid-column: 1 / -1;
-     }
-
-     .informacoes {
-        grid-column: 1/ -1;
+     .sidenav li {
+        margin: 8px;
+        width: 28px;
+        padding: 5px
+        
      }
     
     .anuncios {
@@ -35,13 +59,13 @@
         grid-template-rows: 1fr;
         height: 300px;
         gap: 20px;
-        width: 444px;
+        
         
     }
     
     footer {
         grid-area: footer;
-        width: 444px;
+        
     }
 
 
